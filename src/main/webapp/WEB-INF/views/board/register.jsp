@@ -30,18 +30,18 @@
                 <h2>게시글 작성</h2>
             </div>
             <div class="ct_body">
-                <form action="#" id="form">
+                <form action="/board/register" method="post" id="form">
                     <div class="form-group">
-                        <label>제목</label><br><input type="text">
+                        <label>제목</label><br><input type="text" name="title">
                     </div>
                     <div class="form-group">
-                        <label>내용</label><br><textarea></textarea>
+                        <label>내용</label><br><textarea name="content"></textarea>
                     </div>
                     <div class="form-group">
-                        <label>작성자</label><br><input type="text">
+                        <label>작성자</label><br><input type="text" name="writer">
                     </div>
-                    <button class="btn">등록</button>
-                    <button class="btn">Reset</button>
+                    <button class="btn" type="submit">등록</button>
+                    <button class="btn" type="reset">Reset</button>
                 </form>
                
             </div>

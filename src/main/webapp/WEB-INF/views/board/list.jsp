@@ -29,7 +29,7 @@
         <div class="contents">
             <div class="ct_head">
                 <h2>전체 게시글</h2>
-                <a href="#"><i class="fas fa-pen"></i> 글쓰기</a>
+                <a href="/board/register"><i class="fas fa-pen"></i> 글쓰기</a>
             </div>
             <div class="ct_body">
                 <table>
