@@ -1,0 +1,103 @@
+
+.ct_body {
+    width: 100%;
+}
+.ct_body>table {
+    border-top: 2px solid #2828CD;
+    border-bottom: 2px solid #2828CD;
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 3px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    width: 10%;
+    text-align: center;
+    height: 30px;
+    
+}
+.tb_bno {
+    text-align: left;
+}
+.tb_title {
+    width: 60%;
+    text-align: left;
+}
+.tb_title:hover {
+    color: #4279ff;
+}
+td {
+    font-size: 14px;
+}
+
+tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+/*  contents footer */
+.ct_footer {
+    width: 100%;
+    padding: 100px 0;
+    position: relative;
+}
+select {
+    padding: 10px 0;
+    border: 1px solid #000;
+    border-radius: 3px; 
+}
+.search-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.search-box input {
+    padding: 10px 0;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+.search-box button {
+    padding: 10px 10px;
+    font-size: 13px;
+    margin-left: 5px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.search-box button:hover {
+    color: #4279ff;
+    border: 1px solid #4279ff;
+}
+.paging {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.paginate {
+    background-color: #c8c8c8;
+    border-radius: 3px;
+}
+
+.paginate::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.paginate li {
+    /* padding: 10px; */
+    float: left;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.paginate li a {
+    display: inline-block;
+    padding: 10px;
+}
+
+.paginate li.active {
+    background-color: #4279ff;
+    color: #fff;
+}
