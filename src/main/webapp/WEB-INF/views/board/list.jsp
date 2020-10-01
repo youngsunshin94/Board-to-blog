@@ -43,7 +43,16 @@
                         </tr>
                     </thead>
                     <tbody>
-
+                    	<c:forEach items="${list }" var="board">
+	                    	<tr>
+								<td class="tb_bno"><c:out value="${board.bno }"/></td>
+								<td class="tb_title"><c:out value="${board.title }"/></td>
+								<td class="tb_writer"><c:out value="${board.writer }"/></td>
+								<td class="tb_regdate"><fmt:formatDate value="${board.regdate }" pattern="yyyy-MM-dd"/></td>
+								<td class="tb_hit"><c:out value="${board.hit }"/></td>
+							</tr>
+                    	</c:forEach>
+                    	
                     </tbody>                 
                 </table>
             </div>

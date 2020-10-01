@@ -18,16 +18,18 @@ public class BoardMapperTests {
 	@Autowired
 	private BoardMapper mapper;
 	
-//	@Test
-//	public void insert() {
-//		BoardVO board = new BoardVO();
-//		board.setTitle("제목");
-//		board.setContent("내용");
-//		board.setWriter("user0");
-//		
-//		mapper.insert(board);
-//		log.info(board);
-//	}
+	@Test
+	public void insert() {
+		BoardVO board = new BoardVO();
+		board.setTitle("제목");
+		board.setContent("내용");
+		board.setWriter("user0");
+		
+		for(int i=0;i<10;i++) {
+			mapper.insert(board);
+		}
+		log.info(board);
+	}
 	
 //	@Test
 //	public void read() {
