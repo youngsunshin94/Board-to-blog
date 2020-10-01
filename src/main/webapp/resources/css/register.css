@@ -1,0 +1,62 @@
+.ct_body {
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 30px 20px;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+.form-group input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 7px 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.form-group textarea {
+    width: 100%;
+    height: 500px;
+    margin: 10px 0;
+    padding: 5px 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+#form {
+    width: 650px;
+    margin: 0 auto;
+}
+.form-group label {
+    font-weight: bold;
+    font-size: 15px;
+}
+.btn {
+    margin: 10px 0;
+    height: 40px;
+    font-size: 13px;
+    padding: 0 12px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.btn:hover {
+    color: #4279ff;
+    border: 1px solid #4279ff;
+}
+.uploadDiv {
+    width: 650px;
+    margin: 30px auto;
+}
+.uploadDiv>input {
+    margin: 10px 0;
+}
+.uploadDiv>label {
+    font-size: 15px;
+    font-weight: bold;
+}
+.uploadResult {
+    margin: 50px 0;
+}
