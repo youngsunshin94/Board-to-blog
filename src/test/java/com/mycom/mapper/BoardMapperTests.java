@@ -7,6 +7,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.mycom.domain.BoardVO;
+import com.mycom.domain.Criteria;
 
 import lombok.extern.log4j.Log4j;
 
@@ -18,18 +19,18 @@ public class BoardMapperTests {
 	@Autowired
 	private BoardMapper mapper;
 	
-	@Test
-	public void insert() {
-		BoardVO board = new BoardVO();
-		board.setTitle("제목");
-		board.setContent("내용");
-		board.setWriter("user0");
-		
-		for(int i=0;i<10;i++) {
-			mapper.insert(board);
-		}
-		log.info(board);
-	}
+//	@Test
+//	public void insert() {
+//		BoardVO board = new BoardVO();
+//		board.setTitle("제목");
+//		board.setContent("내용");
+//		board.setWriter("user0");
+//		
+//		for(int i=0;i<10;i++) {
+//			mapper.insert(board);
+//		}
+//		log.info(board);
+//	}
 	
 //	@Test
 //	public void read() {
@@ -52,9 +53,14 @@ public class BoardMapperTests {
 //		mapper.getList().forEach(board -> log.info(board));
 //	}
 	
+//	@Test
+//	public void delete() {
+//		log.info("delete : " + mapper.delete(1L));
+//	}
+	
 	@Test
-	public void delete() {
-		log.info("delete : " + mapper.delete(1L));
+	public void paging() {
+		mapper.getList(new Criteria(2,20)).forEach(board -> log.info(board));
 	}
 
 }
